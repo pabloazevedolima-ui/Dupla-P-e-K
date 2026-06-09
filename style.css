@@ -49,4 +49,27 @@ html, body {
     justify-content: center;
 
     color: white;
+    
+    z-index: 1002;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.container{
+  width: 30px;
+  padding: 14px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial;
+  background-color: 00ffff;
+}
+.mencadastro{
+  width: 45%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #00ffff;
 }
