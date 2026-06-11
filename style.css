@@ -63,7 +63,7 @@ html, body {
 }
 
 .container{
-  width: 30%; /*largura*/
+  width: 15%; /*largura*/
   padding: 14px; /*remove espaço por dentro do elemento*/
   height: 400px; /*altura*/
   display: flex; /*permite alinhar os elementos dentro*/
