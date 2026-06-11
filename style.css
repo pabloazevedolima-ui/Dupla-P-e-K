@@ -3,11 +3,17 @@ html, body {
     padding: 0; /*remove espaço por dentro do elemento*/
 
     width: 100%; /*largura*/
-    min-height: 100%; /*altura*/
-    nav-index: 1000; /*preposição padrão do site*/
+    min-height: 100vh; /*altura*/
+    z-index: 1000; /*preposição padrão do site*/
 
+    
     background-color: rgb(217, 255, 0); /*cor do site*/
     color: rgb(94, 83, 38); /*cor dos textos*/
+
+    /*centraliza o texto*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #title{
@@ -57,16 +63,33 @@ html, body {
 }
 
 .container{
-  width: 30px;
-  padding: 14px;
-  height: 400px;
-  display: flex;
+  width: 30%; /*largura*/
+  padding: 14px; /*remove espaço por dentro do elemento*/
+  height: 400px; /*altura*/
+  display: flex; /*permite alinhar os elementos dentro*/
+
+  /*alinha tudo no centro */
   align-items: center;
   justify-content: center;
+
+  /*texto*/
   text-align: center;
   font-family: Arial;
-  background-color: 00ffff;
+
+
+  /*cor das bordas*/
+  background-color: #00ffff;
+
+  border: 2px solid #00ffff; /*cor da borda*/
+
+    box-shadow: 0 0 10px #4e9102c5,/* cor das bordas*/
+                0 0 20px #4e9102a2,
+                0 0 30px #4e9102;
+
+
 }
+
+
 .mencadastro{
   width: 45%;
   padding: 10px;
