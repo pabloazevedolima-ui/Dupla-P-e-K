@@ -66,11 +66,18 @@ html, body {
   width: 15%; /*largura*/
   padding: 14px; /*remove espaço por dentro do elemento*/
   height: 400px; /*altura*/
-  display: flex; /*permite alinhar os elementos dentro*/
 
-  /*alinha tudo no centro */
-  align-items: center;
-  justify-content: center;
+
+  gap: 15px; /*cria um espaço entre os items*/
+
+
+  margin: auto;
+  
+
+
+  /* organiza em colunas */
+  display: flex; /*permite alinhar os elementos dentro*/
+  flex-direction: column; /* organiza em colunas */
 
   /*texto*/
   text-align: center;
@@ -95,4 +102,96 @@ html, body {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #00ffff;
+}
+
+
+.in_container{
+  width: 30%; /*largura*/
+  padding: 14px; /*remove espaço por dentro do elemento*/
+  height: 425px; /*altura*/
+
+
+  gap: 15px; /*cria um espaço entre os items*/
+  align-items: center;
+ justify-content: center;
+
+  margin: auto;
+  
+
+  /*direia ou esquerda*/
+  margin-left: 100px;
+
+
+  /* organiza em colunas */
+  display: flex; /*permite alinhar os elementos dentro*/
+  flex-direction: column; /* organiza em colunas */
+
+  /*texto*/
+  text-align: center;
+  font-family: Arial;
+
+
+  /*cor das bordas*/
+  background-color: #00ffff;
+
+  border: 2px solid #00ffff; /*cor da borda*/
+
+    box-shadow: 0 0 10px #4e9102c5,/* cor das bordas*/
+                0 0 20px #4e9102a2,
+                0 0 30px #4e9102;
+
+
+}
+
+.de_container{
+  width: 30%; /*largura*/
+  padding: 14px; /*remove espaço por dentro do elemento*/
+  height: 425px; /*altura*/
+
+
+  gap: 15px; /*cria um espaço entre os items*/
+
+ align-items: center;
+ justify-content: center;
+
+  margin: auto;
+  
+
+  /*direia ou esquerda*/
+  /* margin-left: 100px;*/ /*esquerda*/
+  margin-right: 100px; /*direita*/
+
+
+  /* organiza em colunas */
+  display: flex; /*permite alinhar os elementos dentro*/
+  flex-direction: column; /* organiza em colunas */
+
+  /*texto*/
+  text-align: center;
+  font-family: Arial;
+
+
+  /*cor das bordas*/
+  background-color: #00ffff;
+
+  border: 2px solid #00ffff; /*cor da borda*/
+
+    box-shadow: 0 0 10px #4e9102c5,/* cor das bordas*/
+                0 0 20px #4e9102a2,
+                0 0 30px #4e9102;
+
+
+}
+
+
+.button{
+    background-color: #00ffff;
+
+  border: 2px solid #00ffff; /*cor da borda*/
+
+    box-shadow: 0 0 10px #4e9102c5,/* cor das bordas*/
+                0 0 20px #4e9102a2,
+                0 0 30px #4e9102;
+
+
 }
