@@ -1,52 +1,205 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrainIA</title>
+
+    <title>Mathias Connect</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
-</head>
+
 <body>
 
+<header>
 
+    <div class="logo">
+        🎓 Mathias Connect
+    </div>
 
-    <div class="de_container" href="de-con">
-        <div>
-            <p>uma alimentação com um treino alinhado é o mair segredo para seu desemvolvimento rapido e glorioso</p>
-            <button id="ucriacao">criação</button> 
-            <button id="ualimentacao">alimentação</button>
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#sobre">Sobre</a>
+
+        <a href="#sugestoes">Sugestões</a>
+
+        <a href="#contato">Contato</a>
+
+        <a href="admin.html">Área da Escola</a>
+
+    </nav>
+
+</header>
+
+<section id="inicio" class="hero">
+
+    <div class="hero-texto">
+
+        <h1>
+            A voz dos estudantes pode transformar a escola.
+        </h1>
+
+        <p>
+
+            Envie sugestões de melhorias, acompanhe projetos e participe da construção de um ambiente melhor para todos.
+
+        </p>
+
+        <div class="botoes">
+
+            <a href="#sugestoes" class="btn">
+                Enviar Sugestão
+            </a>
+
+            <a href="#listaSugestoes" class="btn2">
+                Ver Sugestões
+            </a>
+
         </div>
-        <div>
-            <p>a evolução e diaria e sempre leva tempo, por isso o mais enportante e a "diciplina"</p>
-            <button id="udesemvolvimento">desemvolvimento</button>
+
+    </div>
+
+</section>
+
+<section id="sobre">
+
+    <h2>Sobre o Projeto</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>💡 Ideias</h3>
+
+            <p>
+
+                Todo estudante poderá sugerir melhorias para a escola.
+
+            </p>
+
         </div>
 
-        <select class="liscadastro" id="biotipo">
-            <option value="ectomorfo"></option>
-            <option value="mesomorfo"></option>
-            <option value="endomorfo"></option>
+        <div class="card">
+
+            <h3>🏫 Projetos</h3>
+
+            <p>
+
+                Acompanhe quais melhorias estão sendo desenvolvidas.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>❤️ Contribuição</h3>
+
+            <p>
+
+                Futuramente será possível apoiar projetos aprovados pela escola.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="sugestoes">
+
+    <h2>Enviar Sugestão</h2>
+
+    <form id="formSugestao">
+
+        <input
+        type="text"
+        id="nome"
+        placeholder="Seu nome">
+
+        <input
+        type="text"
+        id="turma"
+        placeholder="Sua turma">
+
+        <select id="categoria">
+
+            <option>Estrutura</option>
+
+            <option>Biblioteca</option>
+
+            <option>Laboratórios</option>
+
+            <option>Quadra</option>
+
+            <option>Cantina</option>
+
+            <option>Outro</option>
+
         </select>
+
+        <textarea
+        id="descricao"
+        placeholder="Escreva sua sugestão..."
+        rows="6"></textarea>
+
+        <button type="submit">
+
+            Enviar Sugestão
+
+        </button>
+
+        <p id="feedback" class="feedback"></p>
+
+    </form>
+
+</section>
+
+<section id="listaSugestoes">
+
+    <h2>Sugestões Recentes</h2>
+
+    <div id="lista">
+
     </div>
 
-    <div class="navbar" href="nav-bar"><!--barra de navegação-->
-        <img src="LOGOTMV.png" alt="logo" class="logo">
-        <button id="inicio">pagina inicial</button>
-        <button id="criacao">criação</button>
-        <button id="alimentacao">alimentação</button>
-        <button id="desemvolvimento">desemvolvimento</button>
-    </div>
+</section>
 
-    <div class="sobren">
-        <p>estamos a procura de facilitar vidas e transfomalas usando nosso acompanhamento virtual.</p>
-        <h1>diciplina e nosso lema</h1>
-        <h2>foco e progresso</h2>
-    </div>
-    
-    <div class="rodape">
-        <p>direitos reservados 2026</p>
-    </div>
+<section id="contato">
 
-    <script src="script.js"></script>
+    <h2>Contato</h2>
+
+    <p>
+
+        Desenvolvido para incentivar a participação dos estudantes.
+
+    </p>
+
+</section>
+
+<footer>
+
+    <p>
+
+        © 2026 Mathias Connect
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
