@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mathias Connect — Área da Escola</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🎓 Mathias Connect — Escola
+    </div>
+
+    <nav>
+
+        <a href="index.html">Site</a>
+
+    </nav>
+
+</header>
+
+<section id="loginAdmin" class="hero admin-hero">
+
+    <div class="login-box">
+
+        <h2>Área da Escola</h2>
+
+        <p>Entre com a senha de administrador para gerenciar as sugestões.</p>
+
+        <form id="formLogin">
+
+            <input
+            type="password"
+            id="senhaAdmin"
+            placeholder="Senha de administrador"
+            autocomplete="current-password">
+
+            <button type="submit">Entrar</button>
+
+            <p id="loginFeedback" class="feedback"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section id="painelAdmin" class="painel-admin" style="display:none;">
+
+    <div class="painel-topo">
+
+        <h2>Gerenciar Sugestões</h2>
+
+        <div class="painel-acoes">
+
+            <select id="filtroStatus">
+                <option value="todos">Todos os status</option>
+                <option value="pendente">Pendente</option>
+                <option value="aprovado">Aprovado</option>
+                <option value="concluido">Concluído</option>
+                <option value="rejeitado">Rejeitado</option>
+            </select>
+
+            <button id="btnSair" class="btn-sair">Sair</button>
+
+        </div>
+
+    </div>
+
+    <p id="painelFeedback" class="feedback"></p>
+
+    <div id="listaAdmin"></div>
+
+</section>
+
+<footer>
+
+    <p>
+
+        © 2026 Mathias Connect
+
+    </p>
+
+</footer>
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>
